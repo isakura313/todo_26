@@ -1,0 +1,20 @@
+{
+  "name": "todo_26",
+  "version": "0.0.1",
+  "description": "Просто todo",
+  "main": "index.html",
+  "scripts": {
+    "test": "hello world",
+    "start:dev": "webpack serve"
+  },
+  "author": "Paul Yakupov",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.2",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}
