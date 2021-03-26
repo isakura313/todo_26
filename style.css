@@ -1,0 +1,7 @@
+.giph{
+    background-image: url('https://i.giphy.com/media/A0lBH04aSvP30VUwdM/giphy.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
