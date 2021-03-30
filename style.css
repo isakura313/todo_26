@@ -1,7 +1,18 @@
+.second_row{
+    margin: 0 4em;
+}
 .giph{
-    background-image: url('https://i.giphy.com/media/A0lBH04aSvP30VUwdM/giphy.webp');
+    background-image: url('https://media2.giphy.com/media/3o85xtLX7zCyeeWGLC/giphy.gif?cid=ecf05e47r200u8orh7n5y3hulo0g1d8wa25ptz7p4dh0khhu&rid=giphy.gif');
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+}
+
+.btn_plus{
+    width: 40px;
+    height: 40px;
+}
+.todo{
+    font-family: Arial;
 }
