@@ -1,20 +1,17 @@
 import css from "../node_modules/bulma/css/bulma.min.css";
 import style from "../style.css";
 
-// const todos = ["Помыть кота", "купить i7", "новое дело"];
-let todos = Object.values(localStorage);
-
+let todos = Object.values(localStorage); //  получаем массив значений
 
 import Element from "./element";
 Element("div", "columns", "", "#root", "beforeend");
 Element("div", "column has-text-centered", "", ".columns", "beforeend");
 Element("h1", "title", "Todo", ".column", "beforeend");
-Element("div", "columns second_row", "", "#root", "beforeend");
-// Element('div', 'column second_row_column', '', '.second_row')
-Element("div", "giph column is-one-third", "", ".second_row", "beforeend");
+Element("div", "columns second_row is-multiline", "", "#root", "beforeend");
+Element("div", "giph column is-one-third", "", ".columns", "beforeend");
 Element(
     "input",
-    "input is-primary column is-size-4",
+    "input is-primary column is-size-4 is-6",
     "",
     ".second_row",
     "beforeend"
@@ -29,8 +26,8 @@ Element(
 
 // TODO из массива рисовались все дела
 // будем назначать дела последними детьми second_row
-Element("div", " columns third_row is-centered", "", "#root", "beforeend");
-Element("div", " column is-half todo_wrapper", "", ".third_row", "beforeend");
+// Element("div", " columns third_row is-centered", "", "#root", "beforeend");
+Element("div", "todo_wrapper column is-full", "", ".button", "afterend");
 
 drawDeals()
 
@@ -39,7 +36,7 @@ function drawDeals() {
     todos = Object.values(localStorage)
     todos.map((el) => {
         Element("div",
-            "todo is-size-3",
+            "todo is-size-3 is-4 column",
             `${el} <button class="button is-danger">
                     del </button>`,
             ".todo_wrapper",
@@ -70,3 +67,11 @@ function addDeal() {
 }
 
 document.querySelector(".btn_plus").onclick = addDeal;
+document.body.addEventListener('keypress',(e)=>{
+    // console.log(e)
+    if (e.key == 'Enter'){
+      addDeal()
+    }
+} )
+
+// https://isakura13.bitbucket.io/playground2/

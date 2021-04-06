@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .second_row{
     margin: 0 4em;
 }
@@ -10,9 +11,17 @@
 }
 
 .btn_plus{
-    width: 40px;
-    height: 40px;
+    margin-left: 25px;
 }
 .todo{
-    font-family: Arial;
+    font-family: Roboto;
+}
+.todo{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
 }
